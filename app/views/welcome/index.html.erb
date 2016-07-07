@@ -1,0 +1,35 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="about homepage_content">
+		<h2 align="center">Hello! I am</h2>
+		<div align="center">
+			<div class='round-image-50'>
+				<%= image_tag("http://s3.amazonaws.com/codevarma/varma.jpg") %>
+			</div>
+		</div>
+		<h1 align="center">JAMPANA VARMA</h1>
+		<h2 align="center"><b>I develop &amp; design web apps and also edit videos.</b></h2>
+
+		<h3 align="center">
+			Finding the unity between Development &amp; Design is what fuels my passion and drives me to creating better apps. Please feel free to look through my work and if you are interested in working with me don't hesitate to get in touch! <br>
+			You can find me speaking in 140 characters on Twitter, posting pictures on instagram and sharing some code on Github.</h3>
+	</div>
+	<br>
+	<br>
+	<div class="center col-1 posts_content">
+		<h2>Stuff I've Written</h2>
+		<hr align="center">
+		<% @posts.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
+		
+	</div>
+	<div class="center col-1 projects_content">
+		<h2>Stuff I've Built</h2>
+		<hr>
+		<% @projects.each do |project| %>
+			<h3><a href="#"><%= link_to project.title, project %></a></h3>
+			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+		<% end %>		
+	</div>
+</div>

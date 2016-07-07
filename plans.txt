@@ -1,0 +1,62 @@
+
+#Planning my application
+
+	1. What am I building? 
+	   I am building a personal site. A place where one can blog, share projects of work and have people contact us.
+
+	2. Who am I building it for? We are building it for ourselves, but also the community. Sharing what we learn and help others learn. Show our work to potential employers.
+
+	3. What features do I want?
+		- Posts
+			- Create / Edit / Destroy
+			- Markdown
+			- Syntax highlighting
+			- Comments (Disqus)
+			- Vote like/dislike (acts_as_votable)
+		- Projects
+			- Create / Edit / Destroy
+			- Suggestions as Comments (Disqus)
+		- Contact
+			- Contact form
+			- Sendgrid
+		- About Page (optional)
+		- User/Admin access (Devise)
+
+#User Stories
+	As User/Admin,
+	- I want ability to create, edit, delete post and projects.
+	- I want posts to be in a proper markdown format separating code and text.
+	- I want the ability to highlight the syntax of code blocks.
+	- I want to show my work as examples to visitors or potential employers.
+	- I want visitors to contact me on through form on my site.
+	- I want visitors to be able to leave comments on my projects or posts.
+
+#Modeling data
+	- Posts Model
+		title:string
+		content:text (with ability to add images & videos in the content)
+
+	- Projects Model
+		title:string
+		description:text (with ability to add images & videos in the content)
+		gitlink:string
+		weblink:string
+
+	- User Model
+
+#Pages in the application
+	- Home
+	- Posts#index
+	- Posts#show
+	- Projects#index
+	- Projects#show
+	- About (optional)
+	- Contact
+
+
+
+
+
+
+
+
