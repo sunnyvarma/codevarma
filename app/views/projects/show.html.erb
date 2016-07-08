@@ -8,7 +8,7 @@
 	<div id="content" class="post_show_content">
 		<%= markdown @project.description %>
 		<div>
-			<%= image_tag(@project.image.url) %>
+			<%= image_tag(@project.image.display.url) %>
 		</div>
 		
 		<div class="button_wrapper">
