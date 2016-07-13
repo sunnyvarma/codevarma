@@ -7,9 +7,9 @@
 
 	<div id="content" class="post_show_content">
 		<%= markdown @project.description %>
-		<div>
-			<%= image_tag(@project.image.display.url) %>
-		</div>
+		<!--<div>
+        < image_tag(@project.image.display.url) >
+		</div> -->
 		
 		<div class="button_wrapper">
 			<% if @project.github.empty? == false %>

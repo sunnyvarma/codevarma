@@ -11,10 +11,30 @@ $border: #E9E9E9;
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #FFFFF3;
-	background-image: url(http://s3.amazonaws.com/codevarma/paper.jpg);
+}
 
+.logo {
+  margin: 0;
+  height: 10px;
+  width: 10px;
+}
+
+.green {
+  color: #2ecc71;
+}
+
+.blue {
+  color: #3498db;
+}
+
+.half_red {
+  color: #e74c3c;
+}
+
+.orange {
+  color: #ff5f2e;
 }
 
 .wrapper {
@@ -26,6 +46,13 @@ body {
 	width: 80%;
 	max-width: 760px;
 	margin: 0 auto;
+}
+
+.wrapper_head {
+  width: 50%;
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 3rem;
 }
 
 .wrapper_padding {
@@ -101,7 +128,6 @@ hr {
 
 #main_navigation {
 	padding: 1em 5%;
-	background-color: #011638;
 	.name {
 		font-weight: 700;
 		font-size: 1em;
@@ -120,18 +146,19 @@ hr {
 			color: #000000;
 		}
 		a {
-			color: #FFFFF3;
+			color: #000000;
 			text-decoration: none;
 			margin: 0 1rem;
-			font-size: 1.5rem;
+			font-size: 1.1rem;
 		}
 	}
 }
 
 #page_title {
-	color: #D4294F;
+	color: #ffffff;
 	text-align: center;
-	border-bottom: 3px solid $border;
+  background-color: #3498db;
+  margin: 2rem 35% 2rem 35%;
 	padding: 0.2em;
 	font-size: 2rem;
 	text-transform: uppercase;

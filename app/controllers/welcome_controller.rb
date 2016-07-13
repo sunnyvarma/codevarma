@@ -4,5 +4,7 @@ class WelcomeController < ApplicationController
 		@posts = Post.all.limit(3).order("updated_at desc")
 		@projects = Project.all.limit(3).order("updated_at desc")
 	end
-
+  
+  def about
+  end
 end

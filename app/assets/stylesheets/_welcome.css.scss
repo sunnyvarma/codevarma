@@ -35,18 +35,15 @@
 
 .homepage_content {
 	h1 {
-		color: #E71D36;
+    font-size: 6rem;
+		color: #000000;
 	}
 	h2 {
-
-		font-size: 1.1rem;
-		text-transform: uppercase;
+		font-size: 2rem;
 	}
 	h3 {
-
 		font-size: 1.35em;
 		font-weight: 100;
-		
 	}
 	a {
 		text-decoration: none;
@@ -129,4 +126,48 @@
 		font-weight: 700;
 		text-decoration: none;
 	}
+}
+
+#about_wrapper {
+	padding: 3em 0;
+	.post {
+		text-align: center;
+		.date {
+			font-size: .9em;
+			margin: 0;
+		}
+		h2 {
+			margin: 0;
+			font-size: 2em;
+			text-transform: uppercase;
+			a {
+        i {
+          color: #000000;
+        }
+				text-decoration: none;
+				color: #011638;
+				&:hover {
+					color: #000000;
+				}
+			}
+		}
+    h3 {
+      margin: 0;
+      font-size: 2rem;
+      text-transform: none;
+      text-align: center;
+    }
+		hr {
+			margin: 3em auto;
+		}
+	}
+  .about_list {
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .post_link {
+    text-align: center;
+    color: #000000;
+  }
 }
